@@ -1,0 +1,1 @@
+g++ -std=c++17 -Wall -Wextra -I. $(Get-ChildItem -Recurse -Filter *.cpp | ForEach-Object { '"' + $_.FullName + '"' }) -o 5_Layer_Blinker.exe
